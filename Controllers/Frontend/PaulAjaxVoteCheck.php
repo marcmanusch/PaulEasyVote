@@ -21,7 +21,7 @@ class Shopware_Controllers_Frontend_PaulAjaxVoteCheck extends Enlight_Controller
 
     public function saveVotingCheckboxAction(){
 
-        //$this->container->get('front')->Plugins()->ViewRenderer()->setNoRender();
+        $this->container->get('front')->Plugins()->ViewRenderer()->setNoRender();
 
         $formData = $this->Request()->getPost();
         $paulVoting = $formData['votingCheck'];
