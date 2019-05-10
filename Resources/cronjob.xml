@@ -3,8 +3,8 @@
           xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/cronjob.xsd">
 
     <cronjob>
-        <name>Generiere Bewertungsfeed</name>
-        <action>GenerateVoitingFeedCron</action>
+        <name>Bewertungsemail Erinnerung</name>
+        <action>PaulEasyVoteCron</action>
         <active>true</active>
         <interval>86400</interval>
         <disableOnError>false</disableOnError>

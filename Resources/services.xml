@@ -5,20 +5,25 @@
 
     <services>
         <!-- @todo Add your services here -->
-        <service id="paul_easy_vote.subscriber.frontend" class="PaulEasyVote\Subscriber\Frontend">
-            <tag name="shopware.event_subscriber" />
+        <service class="PaulEasyVote\Subscriber\Frontend" id="paul_easy_vote.subscriber.frontend">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
         </service>
 
-        <service id="paul_easy_vote.subscriber.controller_path" class="PaulEasyVote\Subscriber\ControllerPath">
-            <argument type="service" id="service_container" />
-            <tag name="shopware.event_subscriber" />
+        <service class="PaulEasyVote\Subscriber\ControllerPath" id="paul_easy_vote.subscriber.controller_path">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
         </service>
 
+        <service class="PaulEasyVote\Subscriber\PaulEasyVoteCron" id="paul_easy_vote.subscriber.paul_easy_vote_cron">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
 
-
-
-
-
+        <service class="PaulEasyVote\Subscriber\Checkout" id="paul_easy_vote.subscriber.checkout">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
 
     </services>
 </container>
