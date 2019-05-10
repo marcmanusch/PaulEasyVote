@@ -3,14 +3,20 @@
         xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
 
     <elements>
-        <element type="text">
-            <name>demoConfig</name>
-            <label lang="de">Demo Konfiguration</label>
-            <label lang="en">Demo configuration</label>
-            <value>Just a demo configuration, without any effects.</value>
-            <description lang="de">Nur ein hoffentlich hilfreicher Text.</description>
-            <description lang="en">Hopefully this text will help you.</description>
+
+        <element type="number">
+            <name>paulVoteDate</name>
+            <label lang="de">Tage</label>
+            <value>14</value>
+            <description lang="de">Nach wie vielen Tagen sollen Mails versendet werden.</description>
         </element>
+
+        <element type="boolean">
+            <name>active</name>
+            <label lang="de">Aktiv?</label>
+        </element>
+
+
     </elements>
 
 </config>
